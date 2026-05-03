@@ -1,0 +1,51 @@
+1. Chemical & Biological Data
+
+Target Protein: EGFR (Epidermal Growth Factor Receptor), a major oncology target.
+
+Data Source: ChEMBL Database, used to fetch real-world bioactivity data ($IC_{50}$ values).
+
+Chemical Entities: A diverse set of 46+ molecules, including: 
+
+Public Drugs: Aspirin, Ibuprofen, Paracetamol, Caffeine, Morphine, Penicillin, Metformin, Atorvastatin, Sildenafil, Omeprazole, Warfarin, Tamoxifen, Fluoxetine, Diazepam, and Amoxicillin.
+
+Advanced Scaffolds: Imatinib, Ciprofloxacin, Lidocaine, Chloroquine, Artemisinin, and the antiviral Remdesivir.
+
+2. Computational Chemistry (Chemoinformatics)
+
+SMILES Strings: The digital notation used to represent the chemical structures.
+
+Morgan Fingerprints: 2048-bit circular fingerprints (Radius 2) used to turn 2D shapes into math for the computer.
+
+Physicochemical Filters:Lipinski’s Rule of Five: To assess drug-likeness (Molecular Weight, LogP, H-Donors, H-Acceptors).
+
+Veber’s Rule: To assess oral bioavailability (Rotatable Bonds, TPSA).
+
+Potency Metrics: Conversion of raw $IC_{50}$ values into $pIC_{50}$ ($-\log_{10}$ scale) for linear modeling.
+
+3. Machine Learning & Statistics
+
+Principal Component Analysis (PCA): Used for dimensionality reduction to visualize the "Chemical Space" in 2D.
+
+K-Means Clustering: Used to group similar molecules together based on their structural fingerprints.
+
+Random Forest Regressor: The primary QSAR model used to predict bioactivity.
+
+Validation Techniques:80/20 Train/Test Split: To evaluate initial model performance.
+
+Stratified 5-Fold Cross-Validation: To ensure the model is robust and not overfitted.
+
+ROC-AUC Score: To measure the model's ability to distinguish between "Active" and "Inactive" compounds.
+
+4. Software & Libraries (The "Toolbox")
+
+Python 3.10: The programming language used for all logic.
+
+RDKit: The essential library for molecular manipulation and fingerprint generation.
+
+Scikit-Learn: Used for all machine learning (PCA, Random Forest, Cross-Validation).
+
+Pandas & NumPy: For data cleaning, table management, and numerical arrays.
+
+Matplotlib & Seaborn: For creating the PCA plots and performance graphs.
+
+Jupyter Notebook: The interactive environment where the code was written and tested.
