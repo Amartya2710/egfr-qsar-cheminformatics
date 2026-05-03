@@ -45,7 +45,7 @@ Validation: Performed 5-Fold Cross-Validation to ensure the model generalizes ac
 
 Clustering: Successfully identified 4 distinct chemical families within the dataset, separating small aromatics from complex multi-ring systems like Atorvastatin.
 
-🚀 How to UseClone the repository:Bashgit clone https://github.com/YOUR_USERNAME/egfr-qsar-analysis.git
+🚀 How to UseClone the repository:Bashgit clone https://github.com/Amartya2710/egfr-qsar-analysis.git
 
 Install dependencies:Bashpip install -r requirements.txt
 
